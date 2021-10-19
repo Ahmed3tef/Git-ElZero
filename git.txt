@@ -1,0 +1,77 @@
+1- to clone the repo on ur machine
+  clone repo-link
+
+** في عندك 3 مراحل قبل ما تحط الريبو ع الموقع
+1)- working directory ودا الفولدر اللي انت شغال فيه ع الجهاز
+2)- staging area
+3)- local repo
+
+
+2- عشان تعرف في ملفات اتضافت ولا لسا ل stage area
+  git status 
+لو في ملفات مكتوبة قدامك باللون الاحمر يبقا دول متضافوش
+
+3- عشان تضيف ملفات ل staging area اللي قبل ال local area
+  git add file-name or * to add all files
+
+4- لو في ملف انت ضفته بالغلط وعايز تشيله تاني من الستيدج
+  git reset head file-name
+
+5- لو عايز تحط الملفات ع اللوكال عشان بعد كدا ترفعه ع الموقع
+  git commit -m "message about what you have done"
+
+6- عشان ترفع الملفات ع الجيتهب
+  git push remote-name(origin) branch-name(master)
+
+وبكدا الملفات هتترفع ع الجيتهب
+
+7- لو في ملفات زادت ف البروجكت وانت عايز تنزلهم عندك 
+  git pull origin
+
+8- to get configuration values
+  git config --global property-name 
+
+9- to set configuration values
+  git config --global property-name "value"
+
+10- to get configuration list values
+  git config -l
+
+11- to remove value from configuration list
+  git config --global --unset property-name
+
+12- لو عايز اغير ف الكونفج بالاديتور
+  git config --global --edit
+
+13- to make a a public key (ssh)
+  ssh-keygen -t rsa -b 4096 -c "atteff101@gmail.com"
+  generate-key algorithm-type algorithm-name -bits-num num -c "mail"
+
+  or 
+  ssh-keygen -t ed25519 -C "atteff101@gmail.com"
+
+----
+
+14- عشان نرفع الريبو من الكوماند 
+  git remote add origin git@github.com:Ahmed3tef/Git-ElZero.git
+
+15- الخطوة النهائية عشان نعمل pull & push للداتا
+  git push -u origin main
+
+16- عشان نعمل برانش جديد غير الماستر 
+  git branch branch-name
+
+17- عشان تغير البرانش 
+  git checkout branch-name
+
+18- to delete a branch بس بيعمل تشك الاول في تعديلات حصلت ف البرانش ولالا
+  git branch -d branch-name 
+
+19- to delete a branch without checking
+  git branch -D branch-name 
+
+20- عشان نعمل برانش جديد غير الماستر وتروح عليه تلقائي
+  git checkout -b branch-name
+
+21- rename a branch
+  git branch -m branch-name
